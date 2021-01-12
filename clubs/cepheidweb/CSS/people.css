@@ -1,0 +1,433 @@
+.people-landing-page{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Images/5.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+
+    font-size: 80px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 2fr 1fr 2fr;
+
+    gap: 16;
+}
+
+.People{
+    grid-column: 3 / span 6;
+    grid-row: 2 / span 1;
+
+    font-size: 60px;
+}
+
+.people-desc{
+    grid-column: 3 / span 6;
+    grid-row: 3 / span 1;
+
+    font-size: 20px;
+
+    animation: rollup 3s;
+}
+
+.members, .sub-members{
+    display: grid;
+    background-color: white;
+}
+
+.members{
+    grid-column: 3 / span 12;
+    grid-row: 1 / span 1;
+
+    grid-template-rows: 0.4fr 0.2fr 1fr 0.4fr;
+    grid-template-columns: repeat(11, 1fr);
+
+    height: 100vh;
+}
+
+.sub-members{
+    grid-column: 3 / span 12;
+    grid-row: 2 / span 1;
+
+    grid-template-rows: 0.4fr 1fr 1fr 1fr 0.2fr;
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 3rem;
+
+    height: 260vh;
+}
+
+.sm-1, .sm-2, .sm-3, .sm-4, .sm-5, .sm-6, .sm-7, .M-1, .M-2{
+    background-color: #04142C;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0rem;
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.sm-1, .sm-2, .sm-3, .sm-4, .sm-5, .sm-6, .sm-7{
+    
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 0.3fr;
+}
+
+.M-1, .M-2{
+    
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    grid-template-rows: 0.5fr 1.2fr 0.2fr 0.5fr;
+}
+
+.M-1{
+    grid-column: 2 / span 4;
+    grid-row: 3 / span 1;
+
+    height: 70vh;
+}
+
+.M-2{
+    grid-column: 7 / span 4;
+    grid-row: 3 / span 1;
+
+    height: 70vh;
+}
+
+.Co, .C{
+
+    color: black;
+    text-align: center;
+    
+    font-size: 30px;
+}
+
+.C{
+    grid-column: 4 / span 5;
+    grid-row: 1 / span 1;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.Co{
+    grid-column: 4 / span 6;
+    grid-row: 1 / span 1;
+
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.sm-1{
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+}
+
+.sm-2{
+    grid-column: 5 / span 4;
+    grid-row: 2 / span 1;
+}
+
+.sm-3{
+    grid-column: 9 / span 4;
+    grid-row: 2 / span 1;
+}
+
+.sm-4{
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+}
+
+.sm-5{
+    grid-column: 5 / span 4;
+    grid-row: 3 / span 1;
+}
+
+.sm-6{
+    grid-column: 9 / span 4;
+    grid-row: 3 / span 1;
+}
+
+.sm-7{
+    grid-column: 5 / span 4;
+    grid-row: 4 / span 1;
+}
+
+
+.name{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+
+    color: white;
+    font-size: 25px;
+
+    padding-top: 2rem;
+
+    text-align: center;
+}
+
+.pic{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.p-1, .p-2, .p-3, .p-4, .p-5, .p-6, .p-7, .p-8, .p-9{
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.p-1{
+    background-image: url(Pics/Srivatsan\ K.jpeg);
+}
+
+.p-2{
+    background-image: url(Pics/Ipsita\ Joshi.jpg);
+}
+.p-3{
+    background-image: url(Pics/A\ Akshit\ Kumar.jpg);
+}
+.p-4{
+    background-image: url(Pics/Abhinav\ Kosta.jpg);
+}
+.p-5{
+    background-image: url(Pics/Tisha\ Pantawane.jpeg);
+}
+.p-6{
+    background-image: url(Pics/SAI\ ASHISH\ JANA.jpg);
+}
+.p-7{
+    background-image: url(Pics/Anusha\ K.png);
+}
+.p-8{
+    background-image: url(Pics/Pranav\ Kumar.jpg);
+}
+.p-9{
+    background-image: url(Pics/SPANDAN\ MORE.jpg);
+}
+
+
+@media only screen and (max-width: 800px){
+
+    .people-landing-page{
+
+        width: 100vw;
+        height: 100vh;
+        background-image: url(Images/5.jpg);
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: center;
+    
+        font-size: 80px;
+        color: white;
+        font-family: 'Space Grotesk', sans-serif;
+    
+        display: grid;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 2fr 1fr 2fr;
+    
+        gap: 16;
+    }
+    
+    .People{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    
+        font-size: 60px;
+    }
+    
+    .people-desc{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    
+        font-size: 20px;
+    
+        animation: rollup 3s;
+    }
+    
+    .members, .sub-members{
+        display: grid;
+        background-color: white;
+    }
+    
+    .members{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    
+        grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr 1fr 0.1fr;
+        grid-template-columns: 1fr;
+    
+        height: auto;
+    }
+       
+    
+    .sub-members{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.01fr;
+        grid-template-columns: 1fr;
+    
+        gap: 5rem;
+    
+        height: auto;
+    }
+    
+    .sm-1, .sm-2, .sm-3, .sm-4, .sm-5, .sm-6, .sm-7, .M-1, .M-2{
+        background-color: #04142C;
+    
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 0rem;
+
+        height: 90vh;
+    
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 0.1fr;
+    }
+
+    .M-1{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    .M-2{
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+    
+    .Co, .C{
+    
+        color: black;
+        text-align: center;
+        
+        font-size: 30px;
+    }
+    
+    .C{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    
+        padding-top: 60px;
+    }
+    
+    .Co{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    
+        padding-top: 50px;
+    }
+    
+    .sm-1{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .sm-2{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    .sm-3{
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    
+    .sm-4{
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+    
+    .sm-5{
+        grid-column: 1 / span 1;
+        grid-row: 6 / span 1;
+    }
+    
+    .sm-6{
+        grid-column: 1 / span 1;
+        grid-row: 7 / span 1;
+    }
+    
+    .sm-7{
+        grid-column: 1 / span 1;
+        grid-row: 8 / span 1;
+    }
+    
+    
+    .name{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    
+        color: white;
+        font-size: 20px;
+    
+        padding-top: 2rem;
+    
+        text-align: center;
+    }
+    
+    .pic{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .p-1, .p-2, .p-3, .p-4, .p-5, .p-6, .p-7, .p-8{
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    
+    .p-1{
+        background-image: url(Pics/Srivatsan\ K.jpeg);
+    }
+    
+    .p-2{
+        background-image: url(Pics/Ipsita\ Joshi.jpg);
+    }
+    .p-3{
+        background-image: url(Pics/A\ Akshit\ Kumar.jpg);
+    }
+    .p-4{
+        background-image: url(Pics/Abhinav\ Kosta.jpg);
+    }
+    .p-5{
+        background-image: url(Pics/Tisha\ Pantawane.jpeg);
+    }
+    .p-6{
+        background-image: url(Pics/SAI\ ASHISH\ JANA.jpg);
+    }
+    .p-7{
+        background-image: url(Pics/Anusha\ K.png);
+    }
+    .p-8{
+        background-image: url(Pics/Pranav\ Kumar.jpg);
+    }
+    .p-9{
+        background-image: url(Pics/SPANDAN\ MORE.jpg);
+    }
+}
+
+
+
