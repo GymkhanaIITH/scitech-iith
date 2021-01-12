@@ -1,3 +1,8 @@
+window.addEventListener('load', ()=>{
+    const preloader = document.querySelector(".preloader");
+    preloader.classList.add("preload-finish")
+})
+
 const menuBtn = document.querySelector('.menu-btn');
 const drpdown=document.querySelector('.dropdown_menu');
 let menuOpen = false;

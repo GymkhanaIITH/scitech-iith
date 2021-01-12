@@ -57,6 +57,7 @@ body{
       transform: translateY(0px);
     }
 }
+
 @keyframes slideshow{
     0%{
         background-image: url("Images/activities.jpg") ;
@@ -90,6 +91,64 @@ body{
     }
     100%{
         background-image: url("Images/activities.jpg") ;
+    }
+}
+
+.preloader{
+    z-index: 1100;
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: #04142C; 
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    transition: opacity 0.5s ease;
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.still{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    height: 400px;
+    width: 390px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    
+    height: 400px;
+    width: 400px;
+
+    justify-content: center;
+    align-items: center;
+
+    animation: rotate 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
 
