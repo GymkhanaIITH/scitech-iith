@@ -72,7 +72,7 @@ body{
     background-color: white;
 }
 
-.break-0, .break-1, .break-2{ 
+.break-0, .break-1, .break-2, .break-3{ 
     height: 5vh;
 }
 
@@ -91,7 +91,12 @@ body{
     grid-row: 8 / span 1;
 }
 
-.EV-1, .EV-2, .EV-3{
+.break-3{
+    grid-column: 3 / span 12;
+    grid-row: 10 / span 1;
+}
+
+.EV-1, .EV-2, .EV-3, .EV-4{
     height: 15vh;
     background-color: white;
 
@@ -117,9 +122,13 @@ body{
     grid-row: 9 / span 1;
 }
 
+.EV-4{
+    grid-column: 3 / span 12;
+    grid-row: 11 / span 1;
+}
 .break-end{
     grid-column: 3 / span 12;
-    grid-row: 10 / span 1;
+    grid-row: 12 / span 1;
     
     height: 15vh;
 }
@@ -206,7 +215,7 @@ body{
         background-color: white;
     }
     
-    .break-0, .break-1, .break-2{ 
+    .break-0, .break-1, .break-2, .break-3{ 
         height: 5vh;
     }
     
@@ -224,8 +233,13 @@ body{
         grid-column: 2 / span 1;
         grid-row: 8 / span 1;
     }
+
+    .break-3{
+        grid-column: 2 / span 1;
+        grid-row: 10 / span 1;
+    }
     
-    .EV-1, .EV-2, .EV-3{
+    .EV-1, .EV-2, .EV-3, .EV-4{
         height: 50vh;
         background-color: white;
     
@@ -250,10 +264,15 @@ body{
         grid-column: 2 / span 1;
         grid-row: 9 / span 1;
     }
+
+    .EV-4{
+        grid-column: 2 / span 1;
+        grid-row: 11 / span 1;
+    }
     
     .break-end{
         grid-column: 2 / span 1;
-        grid-row: 10 / span 1;
+        grid-row: 12 / span 1;
         
         height: 5vh;
     }

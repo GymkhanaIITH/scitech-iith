@@ -443,6 +443,52 @@ a:hover{
 }
 
 @media only screen and (max-width: 800px){
+    .preloader{
+        z-index: 1100;
+        position: fixed;
+        top: 0;
+    
+        width: 100vw;
+        height: 100vh;
+    
+        background: #04142C; 
+        
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    
+        transition: opacity 0.5s ease;
+    }
+    
+    /*.preload-finish{
+        opacity: 0;
+        pointer-events: none;
+        z-index: -1;
+    }*/
+    
+    .still{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+
+        height: 100px;
+        width: 100px;
+
+        margin: auto;
+    }
+    
+    .rotate{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        
+        height: 300px;
+        width: 300px;
+    
+        animation: rotate 5s;
+        animation-iteration-count: infinite;
+
+        margin: auto;
+    }
+    
     .menu{
         top: -30%;
         right: -10%;
