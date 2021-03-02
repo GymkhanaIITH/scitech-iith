@@ -72,7 +72,7 @@ body{
     background-color: white;
 }
 
-.break-0, .break-1, .break-2, .break-3, .break-4, .break-5{ 
+.break-0, .break-1, .break-2, .break-3, .break-4, .break-5, .break-6{ 
     height: 5vh;
 }
 
@@ -106,6 +106,11 @@ body{
     grid-row: 14/ span 1;
 }
 
+.break-6{
+    grid-column: 3 / span 12;
+    grid-row: 16/ span 1;
+}
+
 .contain{
     grid-column: 3/ span 12;
 }
@@ -135,7 +140,7 @@ body{
 
 .break-end{
     grid-column: 3 / span 12;
-    grid-row: 16 / span 1;
+    grid-row: 18 / span 1;
     
     height: 15vh;
 }
@@ -255,6 +260,11 @@ body{
         grid-row: 14 / span 1;
     }
     
+    .break-6{
+        grid-column: 2 / span 12;
+        grid-row: 16/ span 1;
+    }
+
     .contain{
         grid-column: 2/ span 1;
     }
@@ -283,7 +293,7 @@ body{
     
     .break-end{
         grid-column: 2 / span 1;
-        grid-row: 16 / span 1;
+        grid-row: 18 / span 1;
         
         height: 5vh;
     }
