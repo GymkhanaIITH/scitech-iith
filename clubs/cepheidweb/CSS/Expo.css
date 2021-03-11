@@ -1,0 +1,187 @@
+.A-landing-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Images/black.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+
+    font-size: 80px;
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 2fr 1fr 2fr;
+
+    gap: 16;
+}
+
+.A-H{
+    grid-column: 3 / span 6;
+    grid-row: 2 / span 1;
+
+    font-size: 80px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: rgba(0,0,0,0.7);
+    
+    padding-left: 1rem ;
+}
+
+.A-desc{
+    grid-column: 3 / span 6;
+    grid-row: 3 / span 1;
+
+    font-size: 20px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.Article{
+    grid-column: 3 / span 12;
+    grid-row: 1 / span 1;
+    height: auto;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+}
+
+.para-1{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    font-size: 16px;
+
+    padding-top: 5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 5rem;
+}
+
+.para-2{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    font-size: 16px;
+
+    padding-top: 5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 5rem;
+}
+
+
+.img-1{      
+    
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+
+    object-fit: contain;
+    width: 100%;
+
+    padding: 0rem;
+}
+
+.img-1 img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.video {
+    height: auto;
+    width: 60vw;
+    object-fit: fill; 
+    position: absolute;
+}
+
+@media only screen and (max-width: 800px){
+    .A-landing-page{
+        width: auto;
+        height: 100vh;
+        background-image: url(Images/black.jpg);
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: center;
+    
+        font-size: 80px;
+        color: black;
+        font-family: 'Space Grotesk', sans-serif;
+    
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 2fr 1fr 2fr;
+    
+        gap: 16;
+    }
+    
+    .A-H{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    
+        font-size: 60px;
+        color: white;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .A-desc{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    
+        font-size: 20px;
+        color: white;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .Article{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        height: auto;
+    
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+    }
+    
+    .para-1{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        font-size: 16px;
+
+        padding-top: 5rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 5rem;
+    }
+
+    .para-2{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+        font-size: 16px;
+
+        padding-top: 5rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 5rem;
+    }
+    
+    
+    .img-1{      
+        
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+
+        object-fit: contain;
+        width: 120%;
+
+        padding: 0rem;
+    }
+}
