@@ -599,6 +599,25 @@
         ol.gradient-list>li+li {
             margin-top: 2rem;
         }
+
+        .carousel-item img {
+            width: 500px;
+            height: 340px;
+        }
+
+        @media screen and (max-width:320px) {
+            .carousel-item img {
+                width: 280px;
+                height: 190px;
+            }
+        }
+
+        @media screen and (max-width:570px) and (min-width:321px) {
+            .carousel-item img {
+                width: 390px;
+                height: 240px;
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -656,6 +675,35 @@
         <div class="container text-center mt-4">
             <h1><span class="lighter" style="text-align: center;">Recent Activities</span><span class="jade"></span>
             </h1>
+            <div class="container sizeit mt-5" style="display: flex;justify-content: center;">
+                <div id="carouselExampleControls" class="carousel slide sizeit" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/prakriti_coors/1.jpg" class="d-block m-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/prakriti_coors/2.jpg" class="d-block m-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/prakriti_coors/3.jpg" class="d-block m-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/prakriti_coors/4.jpg" class="d-block m-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/prakriti_coors/5.jpg" class="d-block m-auto" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
             <main>
                 <ol class="gradient-list">
                     <li>
@@ -717,35 +765,6 @@
                     </li>
                 </ol>
             </main>
-            <div class="container sizeit mt-5" style="display: flex;justify-content: center;">
-                <div id="carouselExampleControls" class="carousel slide sizeit" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../images/prakriti_coors/1.jpg" width="280" height="280" class="d-block m-auto"  alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/prakriti_coors/2.jpg" width="190" height="280" class="d-block m-auto" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/prakriti_coors/3.jpg" width="280" height="280" class="d-block m-auto" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/prakriti_coors/4.jpg" width="280" height="280" class="d-block m-auto" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/prakriti_coors/5.jpg" width="280" height="280" class="d-block m-auto" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-            </div>
         </div>
     </section>
     <!-- <section class="fdb-block fp-active" data-block-type="testimonials" data-id="3">
